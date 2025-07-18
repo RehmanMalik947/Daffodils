@@ -20,7 +20,7 @@ const Navbar = () => {
           <span className="text-[20px] font-bold text-gray-800">RentUP</span>
         </div>
 
-        {/* Center: Links */}
+        {/* Center: Navigation Links */}
         <div className="hidden md:flex space-x-6 text-[14px] font-medium">
           <a href="#" className="text-gray-800 hover:text-green-500">Home</a>
           <a href="#" className="text-gray-600 hover:text-green-500">About</a>
@@ -30,14 +30,22 @@ const Navbar = () => {
           <a href="#" className="text-gray-600 hover:text-green-500">Contact Us</a>
         </div>
 
-        {/* Right: Globe + User */}
+        {/* Right Side: Lang | User | Sign In */}
         <div className="flex items-center space-x-4">
+          {/* Language */}
           <button className="flex items-center text-gray-600 hover:text-green-500 text-[14px] font-medium">
             <FaGlobe className="text-[14px] mr-1" />
             EN
           </button>
+
+          {/* User Icon */}
           <button className="text-gray-600 hover:text-green-500 text-[18px]">
             <FiUser className="text-[18px]" />
+          </button>
+
+          {/* Sign In Button */}
+          <button className="px-4 py-1.5 border border-green-500 text-green-500 text-sm font-medium rounded hover:bg-green-500 hover:text-white transition-all">
+            Sign In
           </button>
         </div>
       </div>
